@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'impact'; 
+  src: url('./assets/fonts/impact-webfont/impact.woff') format('woff'),
+       url('./assets/fonts/impact-webfont/Impacted.woff') format('woff'),
+       url('./assets/fonts/impact-webfont/unicode.impact.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal;  
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'karla', sans-serif;
+}
+
+main{
+  padding: 0rem 3.7rem;
+
+}
+
+.header {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,#672280,#A626D3
+  );
+  color: white;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 3rem;
+  height: 3rem;
+  margin-right: .5rem;
+}
+
+.logo-text {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.header-description {
+  font-size: 1.2rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+}
+
+.labeled-input {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.labeled-input__label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: .5rem;
+  color: #374151;
+}
+.labeled-input__input {
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid #D5D4D8;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  color: #6B7280;
+  width: 100%;
+}
+
+.gradient-button {
+  background-image: linear-gradient(
+    to right,#672280,#A626D3
+  );
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.image-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: .5rem;
+  margin: 3rem 0rem;
+  font-family: 'impact', sans-serif;
+  font-size: 3.4rem;
+  text-align: center;
+  color: #6B7280;
+  padding: 2rem 0rem;
+  p{
+    position: absolute;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 black, 
+               -2px -2px 0 black,
+               2px -2px 0 black,
+               -2px 2px 0 black;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.image-card__text--top {
+  margin-bottom: .5rem;
+  top: 3rem;
+}
+
+.image-card__text--bottom {
+  bottom: 3rem;
+}
+
+.image-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
